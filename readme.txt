@@ -6,32 +6,32 @@ This project uses data visualization to understand current and previous state of
 
 Project Flow:
 1.	Data collection
-    a.	Median house pricing per SQFT (source: Zillow)
-    b.	Current forecast for increase in pricing per SQFT (source: Zillow)
-    c.	Median rental pricing for all homes (source: Zillow)
-    d.	Total housing units (source: Department of Finance, State of California)
-    e.	Selected demographics data including:
-        i.	Population (source: Department of Finance, State of California)
-        ii.	Crime rate (source: Wikipedia)
+        a.	Median house pricing per SQFT (source: Zillow)
+        b.	Current forecast for increase in pricing per SQFT (source: Zillow)
+        c.	Median rental pricing for all homes (source: Zillow)
+        d.	Total housing units (source: Department of Finance, State of California)
+        e.	Selected demographics data including:
+            i.	Population (source: Department of Finance, State of California)
+            ii.	Crime rate (source: Wikipedia)
 
 2.	Data filter and cleaning
-    a.	Selecting major cities for the project
-    b.	Cleaning the data as some data for the selected cities was not available for certain time periods
-    c.	Arranging the data in a format for creating a database
+        a.	Selecting major cities for the project
+        b.	Cleaning the data as some data for the selected cities was not available for certain time periods
+        c.	Arranging the data in a format for creating a database
 
 3.	Creating Database
-    a.	Combined all data in a single CSV
-    b.	Created the SQLITE database
+        a.	Combined all data in a single CSV
+        b.	Created the SQLITE database
 
 4.	Java Script Library
-    a.	Dygraphs - http://dygraphs.com
-    b.	Zingchart - https://www.zingchart.com
+        a.	Dygraphs - http://dygraphs.com
+        b.	Zingchart - https://www.zingchart.com
 
 5.	Creating Charts
-    a.	Time-series line chart for Median house pricing using Dygraphs Java Script library
-    b.	Time series bar chart of un-occupied homes using Zingchart Java Script library
-    c.	Time-series line chart for Median rental pricing using Zingchart Java Script library
-    d.	Time-series line chart for increase in housing units using Zingchart Java Script library
+        a.	Time-series line chart for Median house pricing using Dygraphs Java Script library
+        b.	Time series bar chart of un-occupied homes using Zingchart Java Script library
+        c.	Time-series line chart for Median rental pricing using Zingchart Java Script library
+        d.	Time-series line chart for increase in housing units using Zingchart Java Script library
 
 6.	Created the map for selected cities
 
