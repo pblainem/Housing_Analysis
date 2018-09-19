@@ -37,5 +37,5 @@ Project Flow:
 
 7.	Created the Flask app
 
-8.	Creatd the HTML Interactive Dashboard
+8.	Created the HTML Interactive Dashboard
 
