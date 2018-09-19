@@ -39,5 +39,3 @@ Project Flow:
 
 8.	Creatd the HTML Interactive Dashboard
 
-
-
