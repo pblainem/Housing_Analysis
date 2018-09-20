@@ -18,7 +18,7 @@ function ttt(l=3,j=5) {
       },
     scaleY: {
       label: {
-        text:"% of unoccupied homes"
+        text:"% Of Unoccupied Homes"
       },
     },
       series:[        
@@ -30,19 +30,44 @@ function ttt(l=3,j=5) {
         ]
       };
   
-      var myChart1 = {"type":"line","series":[{"values":j}] };
+      var myChart1 = {"type":"line",
+                       
+                       
+                       "plotarea": {
+                      "margin": "dynamic 45 60 dynamic",
+                     },
+                       "scale-x": {
+                        "label":{
+                        "text":"Year"
+                        },
+                      "labels":["2010","2011","2012","2013","2014","2015","2016","2017", "2018"] 
+                      },
+                      "scale-y": {
+                      "values": "1000:6000:500",
+                      "label": {
+                        "text": "$ Median Monthly Rental Price (all homes)"
+                      
+                    }
+                    
+                  },
+                       "series": [{
+                         "values":j,
+                         "line-color": "#58a1a5",
+                         "alpha":1
+                        }
+                        ] };
    
     zingchart.render({ 
         id : 'myChart', 
         data : myConfig1, 
-        height: "100%", 
-        width: "100%" 
+        height: 300, 
+        width: 500 
       });
       zingchart.render({
         id:'chartDiv11',
         data:myChart1,
-        height: 300,
-        width: 700
+        height: 340, 
+	      width: 1100 
       });
     
   };

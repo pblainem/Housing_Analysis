@@ -50,13 +50,13 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="city_sel">
                         <h5>Select  City:</h5>
                         <select id="city1" onchange="optionChanged(this.value)"></select>
                     </div>
                     <div class="forecast">
-                            
+                        <h5>Home Listings and Sales</h5>   
                         <h6>Forecast: change in the Zillow Home Value Index over the next 12 months.</h6>
                         <div id="div_forecast">
                             <div id="city_forecast">
@@ -74,10 +74,10 @@
                 
             
                 
-                <div class="col-md-9">
+                <div class="col-md-8">
                     <section class="comparison-chart">
                         <div id="graphdiv"
-                            style="width:100%; height:350px"></div>
+                            style="width:95%; height:250px"></div>
                         
                         <p class="description">This chart is interactive: you can mouse over to highlight individual values. You can click and drag to zoom. Double-clicking will zoom you back out. Shift-drag will pan.</p>
 
@@ -87,9 +87,16 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-6">
                     <h5>Potential Market</h5>
+                    
                     <div id='myChart'></div>
+                </div>
+                <div class="col-md-6">
+                    <section class="comparison-chart2">
+                        <div id='chartDiv12' style="width:100%; height:300px;"></div>
+                        
+                    </section> 
                 </div>
             </div>
             
@@ -98,25 +105,13 @@
             <div class="row">
                 
                 <div class="col-md-12">
+                    <h5>Rental Pricing Trend</h5>
                     <div id='chartDiv11'></div>  
                      
                 </div>
 
             </div>
-            <div class="row">
-                
-                <div class="col-md-9">
-                        <section class="comparison-chart">
-                            <div id='chartDiv12' style="width:100%; height:350px"></div>
-                            
-                        </section> 
-                </div>
-                <div class="col-md-3">
-                    <p></p>
-                </div>
-
-                 
-            </div>
+           
 
             
         </div>

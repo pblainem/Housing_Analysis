@@ -44,7 +44,9 @@ function buildCharts(city) {
        {
          legend: 'always',
          title: city,
-         ylabel: "Median Price Per Sq Ft, $",
+         ylabel: "Median List Price Per Sq Ft, $",
+         xRangePad: 1,
+         
         }    
       );  
     //*********************************************************************************/
@@ -54,6 +56,7 @@ function buildCharts(city) {
       legend: 'always',
       title: city,
       ylabel: "Housing Units Increase YoY",
+      xRangePad: 1
      }    
    );  
 
@@ -74,6 +77,7 @@ function buildCharts(city) {
         .append("text")
         .text(`${city}: ${newF}%`)
         .style("color", "#58a1a5")
+        .style("font-size","20px")
     //*********************************************************************************/
     //adding bar chart
     
